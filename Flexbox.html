@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox入門</title>
+    <style>
+        .container {
+            display: flex; /* Flexboxを有効にし、簡単に横並びにできる。 */;
+        }
+        .item {
+            background-color: #ffa61c;
+            margin: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.container + Tabキー -->
+    <div class="container">
+        <div class="item">item01</div>
+        <div class="item">item02</div>
+        <div class="item">item03</div>
+        <div class="item">item04</div>
+    </div>
+
+
+    <br><br><br><br><br><br><br><br><br><hr>
+
+    <h1>FlexコンテナーとFlexアイテム</h1>
+    <p>Flexコンテナーが親要素、Flexアイテムが子要素です。</p><br>
+    Flexコンテナーに対して、<code>display: flex;</code>を指定します。<br>
+    Flexアイテムは自動的に横並びになります。<br>
+    <br>
+
+    <br><br><br><br><br>
+
+    <h1>以下自動入力につき</h1>
+    <h2>Flexコンテナーのプロパティ</h2>
+    <ul>
+        <li><code>flex-direction</code>：アイテムの並び方向を指定します。</li>
+        <li><code>justify-content</code>：アイテムの横方向の配置を指定します。</li>
+        <li><code>align-items</code>：アイテムの縦方向の配置を指定します。</li>
+        <li><code>flex-wrap</code>：アイテムがコンテナーの幅を超えた場合の折り返しを指定します。</li>
+    </ul>
+    <h2>Flexアイテムのプロパティ</h2>
+    <ul>
+        <li><code>order</code>：アイテムの表示順序を指定します。</li>
+        <li><code>flex-grow</code>：アイテムの伸縮性を指定します。</li>
+        <li><code>flex-shrink</code>：アイテムの縮小性を指定します。</li>
+        <li><code>flex-basis</code>：アイテムの初期サイズを指定します。</li>
+        <li><code>align-self</code>：特定のアイテムの縦方向の配置を指定します。</li>
+    </ul>
+    
+</body>
+</html>
