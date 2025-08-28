@@ -26,13 +26,23 @@
             /* justify-content: space-between; /* 最初と最後 両端のアイテムは端に配置し、残りの子要素を均等に配置。 */          
             justify-content: space-around; /* 要素間を均等に配置、両端は要素の半分の余白 */
             /* justify-content: space-evenly; /* 要素間を均等に配置、両端もアイテムと同じ余白 */
+
+
+            height: 100vh; /* ビューポートハイトの略 100vh：ブラウザウィンドウの表示領域いいっぱいの高さ*/
+            /* align-items: stretch; /* 要素の高さを揃える（デフォルトで有効） */
+            /* align-items: flex-start; /* 上ぞろえ */
+            /* align-items: flex-end; /* 下ぞろえ */
+            /* align-items: center; /* 中央ぞろえ */
+            align-items: baseline; /* テキストのベースラインに揃える （文字の最下部が揃う）*/
         }
         .item {
             background-color: #ffa61c;
             margin: 10px;
             padding: 20px;
         }
-
+        .lg {
+            font-size: xx-large;
+        }
 
 
         td {
@@ -44,7 +54,7 @@
     <!-- div.container + Tabキー -->
     <div class="container">
         <div class="item">item01</div>
-        <div class="item">item02</div>
+        <div class="item lg">item02</div>
         <div class="item">item03</div>
         <!-- <div class="item">item04</div>
         <div class="item">item05</div>
@@ -165,5 +175,32 @@
         </tr>
     </table>
     <p>justify-contentプロパティを使うと、親要素の空きスペースがあった場合の子要素の水平方向位置を簡単に指定することができる。</p>
+
+    <br><br><br><br><br><hr>
+    <h1>align-itemsプロパティ</h1>
+    <p>align-itemsプロパティで、子要素の垂直方向の揃えを指定できるようになる。</p>
+
+    <table>
+        <tr>
+            <td>stretch</td>
+            <td>要素の高さを揃える（デフォルトで有効）</td>
+        </tr>
+        <tr>
+            <td>flex-start</td>
+            <td>上ぞろえ</td>
+        </tr>
+        <tr>
+            <td>flex-end</td>
+            <td>下ぞろえ</td>
+        </tr>
+        <tr>
+            <td>center</td>
+            <td>中央ぞろえ（親要素の高さ内で）</td>
+        </tr>
+        <tr>
+            <td>baseline（初期値）</td>
+            <td>テキストのベースラインに揃える（文字の最下部が揃う）</td>
+        </tr>
+    </table>
 </body>
 </html>
