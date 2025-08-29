@@ -22,9 +22,9 @@
 
             /* justify-content: flex-start; /* 初期値 左ぞろえ */
             /* justify-content: flex-end; /* 右ぞろえ */
-            /* justify-content: center; /* 中央ぞろえ */
+            justify-content: center; /* 中央ぞろえ */
             /* justify-content: space-between; /* 最初と最後 両端のアイテムは端に配置し、残りの子要素を均等に配置。 */          
-            justify-content: space-around; /* 要素間を均等に配置、両端は要素の半分の余白 */
+            /* justify-content: space-around; /* 要素間を均等に配置、両端は要素の半分の余白 */
             /* justify-content: space-evenly; /* 要素間を均等に配置、両端もアイテムと同じ余白 */
 
 
@@ -34,6 +34,14 @@
             /* align-items: flex-end; /* 下ぞろえ */
             /* align-items: center; /* 中央ぞろえ */
             align-items: baseline; /* テキストのベースラインに揃える （文字の最下部が揃う）*/
+
+
+            /* align-content: stretch; /* 初期値 */
+            /* align-content: flex-start; /* 上揃え */
+            /* align-content: flex-end; /* 下揃え */ 
+            /* align-content: center; /* 中央揃え */
+            /* align-content: space-between;  */
+            align-content: space-around;
         }
         .item {
             background-color: #ffa61c;
@@ -56,13 +64,21 @@
         <div class="item">item01</div>
         <div class="item lg">item02</div>
         <div class="item">item03</div>
-        <!-- <div class="item">item04</div>
+        <div class="item">item04</div>
         <div class="item">item05</div>
         <div class="item">item06</div>
         <div class="item">item07</div>
         <div class="item">item08</div>
         <div class="item">item09</div>
-        <div class="item">item10</div> -->
+        <div class="item">item10</div>
+        <div class="item">item11</div>
+        <div class="item">item12</div>
+        <div class="item">item13</div>
+        <div class="item">item14</div>
+        <div class="item">item15</div>
+        <div class="item">item16</div>
+        <div class="item">item17</div>
+        <div class="item">item18</div>
 
         <!-- div.item{item}*6 + Tabキー -->
 
@@ -200,6 +216,37 @@
         <tr>
             <td>baseline</td>
             <td>テキストのベースラインに揃える（文字の最下部が揃う）</td>
+        </tr>
+    </table>
+    
+    <br><br><br><br><br><hr>
+    
+    <h1>align-contentプロパティ</h1>
+    <p>align-contentプロパティで、子要素を複数行にした時の揃えを指定できるようになる。</p>
+    <table border="1">
+        <tr>
+            <td>stretch</td>
+            <td>親要素の高さに合わせて広がる（初期値）</td>
+        </tr>
+        <tr>
+            <td>flex-start</td>
+            <td>上揃え（親要素の高さ内）</td>
+        </tr>
+        <tr>
+            <td>flex-end</td>
+            <td>下ぞろえ</td>
+        </tr>
+        <tr>
+            <td>center</td>
+            <td>中央ぞろえ</td>
+        </tr>
+        <tr>
+            <td>space-between</td>
+            <td>最初の行と最後の行 つまり、両端は端っこに配置し、残りの行を均等に配置</td>
+        </tr>
+        <tr>
+            <td>space-around</td>
+            <td>要素間を均等に配置、両端はアイテムの半分の余白を配置</td>
         </tr>
     </table>
 </body>
